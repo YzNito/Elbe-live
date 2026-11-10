@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="description" content="ELBE LIVE: Aktueller Wasserstand und interaktiver 30-Tage-Verlauf am Pegel Hamburg St. Pauli.">
+  <title>ELBE LIVE — Variante A / Editorial</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/a.css">
+  <script defer src="../js/app.js"></script>
+</head>
+<body class="theme-a" data-current-trend="unknown">
+  <div class="top-strip"><span>HAMBURG, DE · 53°32' N</span><span>DATEN AUS DEM HAMBURGER HAFEN</span><span>ELBE / LIVE <span class="blink-dot">●</span></span></div>
+  <header class="site-header wrap">
+    <a class="logo" href="../" aria-label="ELBE LIVE Startseite"><span class="logo-sign">≈</span> ELBE<span class="logo-second">LIVE</span></a>
+    <nav aria-label="Hauptnavigation"><a href="#live">Live-Pegel</a><a href="#timeline">Zeitreise</a><a href="#geschichte">Über das Projekt</a><a class="alt-link" href="../variante-b/">Variante B <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main>
+    <section class="hero-a wrap" aria-labelledby="hero-a-title">
+      <div class="hero-text">
+        <span class="eyebrow"><i></i> DAS WASSER STEHT NIEMALS STILL</span>
+        <h1 id="hero-a-title">Ein Fluss.<br><em>Tausend</em><br>Momente.</h1>
+        <p>Die Elbe verändert sich ständig. Entdecke den Wasserstand in Hamburg – <strong>jetzt und im Verlauf der letzten 30 Tage.</strong></p>
+        <a class="primary-button" href="#live">Pegel live entdecken <span aria-hidden="true">↘</span></a>
+        <span class="hero-index">01 / EIN BLICK AUF DIE ELBE</span>
+      </div>
+      <figure class="hero-image"><img src="../assets/img/01-hero-hamburg-sonnenuntergang.webp" alt="KI-generierte Hafenansicht von Hamburg mit Elbe und warmem Abendlicht" fetchpriority="high"><figcaption><span>HAMBURG / LANDUNGSBRÜCKEN</span><span>VISUELLE INTERPRETATION</span></figcaption></figure>
+    </section>
+
+    <section class="live-section wrap" id="live" aria-labelledby="live-title">
+      <div class="section-head"><span class="eyebrow">01 / MOMENTAUFNAHME</span><h2 id="live-title">Die Elbe. <em>Jetzt.</em></h2><p>Messstation Hamburg St. Pauli</p></div>
+      <div class="current-layout">
+        <div class="current-readout">
+          <span class="micro-title">AKTUELLER WASSERSTAND</span>
+          <div class="big-number"><strong data-level aria-live="polite">—</strong><span>cm</span></div>
+          <p class="muted">Messung: <time data-measurement-time>Wird geladen …</time></p>
+          <div class="trend-box"><span class="micro-title">PEGELTENDENZ</span><strong data-trend>Wird ermittelt …</strong><span data-trend-detail>Vergleich mit einer früheren Messung</span></div>
+          <div class="fetch-state" data-status data-state="loading" role="status"><span class="fetch-dot" aria-hidden="true"></span><div><strong data-status-kind>LADE LIVE-DATEN</strong><p data-status-text>Aktuelle Messdaten werden geladen …</p></div></div>
+          <button type="button" class="text-button" data-refresh>↻ Daten neu laden</button>
+        </div>
+        <div class="wave-panel"><div class="wave-top"><span>WASSER IN BEWEGUNG</span><span>ST. PAULI / ELBE</span></div><div class="water-visual" data-water-visual role="img" aria-label="Wasserstandsvisualisierung wartet auf Daten"><div class="water-fill"><span class="waterline"></span><div class="water-shimmer"></div></div><span class="water-side">EBBE / FLUT</span><span class="water-center">≈</span></div><p class="water-note">Illustration: relative Höhe innerhalb der gewählten Zeitspanne. Kein Maßstab für die Flusstiefe.</p></div>
+      </div>
+    </section>
+
+    <section class="timeline-section" id="timeline" aria-labelledby="timeline-title"><div class="wrap">
+      <div class="timeline-heading"><div><span class="eyebrow">02 / DIE ZEITREISE</span><h2 id="timeline-title">30 Tage.<br><em>Ein Fluss in Bewegung.</em></h2></div><p>Ziehe den Regler oder starte die Zeitreise. Jeder Punkt stammt aus den aufgezeichneten Messwerten der offiziellen API.</p></div>
+      <div class="chart-card">
+        <div class="chart-toolbar"><div class="tabs" role="group" aria-label="Zeitraum auswählen"><button type="button" data-period="1" aria-pressed="true" class="active">24 Stunden</button><button type="button" data-period="7" aria-pressed="false">7 Tage</button><button type="button" data-period="30" aria-pressed="false">30 Tage</button></div><button type="button" class="play-button" data-play disabled aria-pressed="false"><span aria-hidden="true">▶</span> Verlauf abspielen</button></div>
+        <div class="selection-head"><div><span class="micro-title">AUSGEWÄHLTER MOMENT</span><strong data-selected-level>—</strong><span class="unit"> cm</span></div><div class="selected-meta"><strong data-selected-time>Messwerte werden geladen …</strong><p data-selected-description>Zeitpunkt auswählen, sobald die Daten vorliegen.</p></div></div>
+        <svg data-chart class="chart" viewBox="0 0 1000 290" role="img" aria-label="Die Messreihe wird geladen"><text x="55" y="145" class="chart-fallback">Messwerte werden geladen …</text></svg>
+        <div class="time-controls"><span data-range-start>—</span><input type="range" data-scrubber disabled min="0" max="100" value="100" aria-label="Zeitpunkt innerhalb der historischen Messreihe auswählen"><span data-range-end>—</span></div>
+        <p class="history-status" data-history-status>Die historische Zeitreihe wird geladen …</p>
+        <div class="stats-row"><div><span>MINIMUM</span><strong><span data-min>—</span> cm</strong></div><div><span>MAXIMUM</span><strong><span data-max>—</span> cm</strong></div><div><span>DURCHSCHNITT</span><strong><span data-average>—</span> cm</strong></div><div><span>MESSPUNKTE</span><strong data-point-count>—</strong></div></div>
+      </div>
+      <p class="footnote">Live-Abruf beim Öffnen und danach alle fünf Minuten. Zuletzt abgerufen: <span data-sync-time>—</span>. Pegelwerte in cm über Pegelnullpunkt.</p>
+    </div></section>
+
+    <section class="image-break" aria-label="Blick auf die Wasseroberfläche"><img loading="eager" src="../assets/img/03-wasser-textur.webp" alt="KI-generierte Nahaufnahme der bewegten Elbe mit Lichtreflexen"><div><span>NICHTS BLEIBT, WIE ES IST.</span><strong>Immer in Bewegung.</strong></div></section>
+    <section class="story-section wrap" id="geschichte"><div class="story-photo"><img loading="eager" src="../assets/img/04-elbe-promenade.webp" alt="KI-generierte Darstellung der Hamburger Elbpromenade mit Spaziergängern"><span>03 / LEBEN AN DER ELBE</span></div><div class="story-copy"><span class="eyebrow">ÜBER DAS PROJEKT</span><h2>Wasser verändert <em>unseren Blick.</em></h2><p>Die Elbe prägt das Leben in Hamburg. Für Spaziergänge am Hafen, Fotos am Wasser oder einen Blick auf Ebbe und Flut ist der aktuelle Pegelstand oft wichtiger, als man denkt.</p><p>ELBE LIVE macht diese Daten sichtbar – direkt beim Öffnen der Seite und in einer klaren, verständlichen Gestaltung.</p><h3>Was zeigen die Daten?</h3><p>Der Pegelstand zeigt, wie hoch das Wasser der Elbe aktuell über dem Pegelnullpunkt steht. Da sich der Wasserstand regelmäßig verändert, sieht die Seite heute anders aus als morgen.</p><div class="audience-label">FÜR MENSCHEN IN HAMBURG · TOURIST:INNEN · FOTOGRAF:INNEN · WASSERSPORT & FREIZEIT</div></div></section>
+  </main>
+  <footer class="footer-a"><div class="wrap footer-grid"><div><div class="footer-logo">ELBE <span>LIVE ≈</span></div><p>Die Elbe in Echtzeit. Und im Rückblick.</p></div><div><strong>QUELLEN & HINWEISE</strong><p>Datenquelle: <a href="https://pegelonline.wsv.de/" rel="noopener noreferrer" target="_blank">PEGELONLINE / WSV</a>. Messstation Hamburg St. Pauli. <a href="https://pegelonline.wsv.de/webservice/dokuRestapi" rel="noopener noreferrer" target="_blank">Offizielle API-Dokumentation</a>.</p><p>Visualisierungen beruhen auf Messwerten; die atmosphärischen Bilder wurden mit KI erzeugt. Messwerte sind vorläufig und ersetzen keine amtliche Sicherheitsinformation.</p><p><a href="../variante-b/">Variante B</a> · <a href="../ki-logbuch/">KI-Logbuch</a> · <a href="../">Übersicht</a></p><small>Studienprojekt der Kunstschule Wandsbek, keine offizielle Seite.</small></div></div></footer>
+</body></html>
